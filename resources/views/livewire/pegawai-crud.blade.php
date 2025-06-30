@@ -17,7 +17,7 @@
         <table class="table table-bordered table-sm">
             <thead class="table-light">
                 <tr>
-                    <th>#</th>
+                    <th>No</th>
                     <th>NIK / NIP</th>
                     <th>NIDN</th>
                     <th>NUPTK</th>

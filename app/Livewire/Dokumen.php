@@ -17,6 +17,7 @@ class Dokumen extends Component
 
     public $jenis_arsip = null;
     public $tanggal, $namapemilik, $file, $dokumenId, $isEdit = false, $search = '';
+     public $existingFile = null;
 
     protected $paginationTheme = 'bootstrap';
 
@@ -65,7 +66,7 @@ class Dokumen extends Component
         $this->tanggal     = $d->tanggal;
         $this->namapemilik = $d->namapemilik;
         $this->file        = null;
-
+         $this->existingFile = $d->file;
         $this->isEdit = true;
     }
 
@@ -100,6 +101,6 @@ class Dokumen extends Component
 
     public function resetInput()
     {
-        $this->reset(['dokumenId', 'jenis_arsip', 'tanggal', 'namapemilik', 'file', 'isEdit']);
+        $this->reset(['dokumenId', 'jenis_arsip', 'tanggal', 'namapemilik', 'file', 'existingFile', 'isEdit']);
     }
 }
